@@ -16,17 +16,17 @@ window.onload = function () {
     document.addEventListener("visibilitychange", function (e) {
       if (!document.hidden) {
         document.title = pageTitle;
-        favicon.href = "/assets/img/dp_male.png";
+        favicon.href = "/tausif_portfolio/assets/img/dp_male.png";
       }
     });
     
     function toggle() {
       if (document.title === attentionMessage) {
         document.title = pageTitle;
-        favicon.href = "/assets/img/dp_male.png";
+        favicon.href = "/tausif_portfolio/assets/img/dp_male.png";
       } else {
         document.title = attentionMessage;
-        favicon.href = "/assets/img/folded.png";
+        favicon.href = "/tausif_portfolio/assets/img/folded.png";
       }
     }
     };
