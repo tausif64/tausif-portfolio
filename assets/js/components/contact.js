@@ -10,7 +10,7 @@ const contact = {
           <div class="row w-100">
             <div class="col-lg-6 col-md-12 col-sm-12">
               <div class="d-flex mt-5 justify-content-center align-items-center">
-                <img src="/assets/img/contact.svg" height="400px" width="90%" alt="" />
+                <img src="/tausif-portfolio/assets/img/contact.svg" height="400px" width="90%" alt="" />
               </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12">
