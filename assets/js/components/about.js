@@ -9,7 +9,7 @@ const about = {
               <div class="col-lg-4 col-md-12 col-sm-12 be px-5 py-4">
                 <div class="d-flex flex-wrap justify-content-center align-item-center">
                   <div class="flex-column text-center" style="height=215px; width=200px;">
-                    <img src="/assets/img/dp.jpg" height="214px" width="200px" class="rounded-circle" height="auto" width="200px" alt="Dispaly Picture">
+                    <img src="/tausif-portfolio/assets/img/dp.jpg" height="214px" width="200px" class="rounded-circle" height="auto" width="200px" alt="Dispaly Picture">
                     
                     <div class="info">
                       <h3 class="mt-3 mb-2">Tausif Ansari</h3>
@@ -30,7 +30,7 @@ const about = {
                 </div>
                 
                 <div class="download-cv">
-                  <a target="_blank" href="/assets/details/Tausif_Resume.pdf"><button>Download My CV</button></a>
+                  <a target="_blank" href="/tausif-portfolio/assets/details/Tausif_Resume.pdf"><button>Download My CV</button></a>
                 </div>
               </div>
 
