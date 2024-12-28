@@ -80,14 +80,14 @@ const Hero = () => {
           </div>
           <div className="flex space-x-4 mt-3">
             <Link
-              to="/resume"
+              to="/tausif-portfolio/resume"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline link-button"
             >
               Resume
             </Link>
-            <Link to="/contact" className="hover:underline">
+            <Link to="/tausif-portfolio/contact" className="hover:underline">
               Contact
             </Link>
           </div>

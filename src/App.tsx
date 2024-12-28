@@ -12,10 +12,10 @@ const App = () => {
     <>
       <CustomCursor />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/projects/:id" element={<ProjectDetail />} />
+        <Route path="/tausif-portfolio/" element={<Home />} />
+        <Route path="/tausif-portfolio/resume" element={<Resume />} />
+        <Route path="/tausif-portfolio/contact" element={<Contact />} />
+        <Route path="/tausif-portfolio/projects/:id" element={<ProjectDetail />} />
       </Routes>
     </>
   )
