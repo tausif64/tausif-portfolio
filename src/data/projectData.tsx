@@ -18,7 +18,7 @@ const projectData = [
     ],
     technology: [<ReactIcon />, <Express />, <NodeJS />, <MySQL />],
     url: "https://www.missionpahal.org/",
-    images: ["/mission_pahal_1.png", "/mission_pahal_2.jpg"],
+    images: ["/tausif-portfolio/mission_pahal_1.png", "/tausif-portfolio/mission_pahal_2.jpg"],
   },
   {
     id: "a09cad2a609f600d299f94bb",
@@ -34,7 +34,7 @@ const projectData = [
       <JqueryIcon />,
     ],
     url: "https://shivaenvirolab.com/",
-    images: ["/shivaenvirolab_1.png", "/shivaenvirolab_2.jpg"],
+    images: ["/tausif-portfolio/shivaenvirolab_1.png", "/tausif-portfolio/shivaenvirolab_2.jpg"],
   },
   {
     id: "c0f5c1821e614532c0be3e5f",
@@ -50,7 +50,7 @@ const projectData = [
       <JqueryIcon />,
     ],
     url: "https://modelschoolkanke.com/",
-    images: ["/modelschoolkanke_1.png", "/modelschoolkanke_2.jpg"],
+    images: ["/tausif-portfolio/modelschoolkanke_1.png", "/tausif-portfolio/modelschoolkanke_2.jpg"],
   },
 ];
 

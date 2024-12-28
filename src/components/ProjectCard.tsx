@@ -31,7 +31,6 @@ const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
                 }
             </div>
             <div className="flex flex-wrap mt-2 gap-2 cursor-pointer">
-                // Ensure data.technology is an array of strings
                 {data.technology.map((item: TechnologyComponent, index: number) => (<span key={index}>{item}</span>))}
             </div>
         </div>

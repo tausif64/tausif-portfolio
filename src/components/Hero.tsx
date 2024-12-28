@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="min-w-[280px] lg:col-span-5 col-span-12">
       <div className="flex items-center justify-center md:justify-start gap-4 flex-col md:flex-row mt-14">
-        <img src="/profile_pic.png" alt="profile pic" className="h-56 w-48" />
+        <img src="/tausif-portfolio/profile_pic.png" alt="profile pic" className="h-56 w-48" />
         <div>
           <div className="text-xl sm:text-2xl font-semibold mt-1">
             Tausif Ansari
