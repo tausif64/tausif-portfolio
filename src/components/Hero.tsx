@@ -81,8 +81,6 @@ const Hero = () => {
           <div className="flex space-x-4 mt-3">
             <Link
               to="/tausif-portfolio/resume"
-              target="_blank"
-              rel="noopener noreferrer"
               className="hover:underline link-button"
             >
               Resume
