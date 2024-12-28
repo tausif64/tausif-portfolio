@@ -1,29 +1,42 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import  { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const CustomCursor = () => {
     const [cursorX, setCursorX] = useState(0);
     const [cursorY, setCursorY] = useState(0);
-    const [deviceType, setDeviceType] = useState("mouse");
+    // let setDeviceType: string = "mouse";
     const [isClicking, setIsClicking] = useState(false);
     // check if it is a touch device
-    const isTouchDevice = () => {
-        try {
-            document.createEvent('TouchEvent');
-            setDeviceType('touch');
-            return true;
-        } catch (e) {
-            setDeviceType('mouse');
-            return false;
-        }
-    };
-    const move = (e: { touches: any[]; clientX: any; clientY: any; }) => {
-        const touchEvent = e.touches ? e.touches[0] : null;
-        const x = !isTouchDevice() ? e.clientX : touchEvent?.clientX || 0;
-        const y = !isTouchDevice() ? e.clientY : touchEvent?.clientY || 0;
-        const element = document.elementFromPoint(x, y);
+    // const isTouchDevice = () => {
+    //     try {
+    //         document.createEvent('TouchEvent');
+    //         setDeviceType = 'touch';
+    //         return true;
+    //     } catch (e) {
+    //         setDeviceType = 'mouse';
+    //         return false;
+    //     }
+    // };
+    const move = (e: MouseEvent | TouchEvent) => {
+        let x: number;
+        let y: number;
 
+        // Check if the event is a TouchEvent
+        if ('touches' in e) {
+            // Handle touch event
+            if (e.touches.length > 0) {
+                const touch = e.touches[0]; // Get the first touch
+                x = touch.clientX; // Access clientX
+                y = touch.clientY; // Access clientY
+            } else {
+                return; // No touches, exit the function
+            }
+        } else {
+            // Handle mouse event
+            x = e.clientX; // Access clientX
+            y = e.clientY; // Access clientY
+        }
+
+        // Set the cursor position
         setCursorX(x);
         setCursorY(y);
 
@@ -32,11 +45,19 @@ const CustomCursor = () => {
         if (cursorBorder) {
             cursorBorder.style.left = `${x}px`;
             cursorBorder.style.top = `${y}px`;
-            if (element?.tagName == 'A' || element.closest('A') || element?.tagName == 'BUTTON' || element.closest('BUTTON')) {
-                cursorBorder.style.height = `70px`;
-                cursorBorder.style.width = `70px`;
-            }
-            else {
+
+            // Check if the element under the cursor is a link or button
+            const element = document.elementFromPoint(x, y);
+            if (element) {
+                if (element.tagName === 'A' || element.closest('A') || element.tagName === 'BUTTON' || element.closest('BUTTON')) {
+                    cursorBorder.style.height = `70px`;
+                    cursorBorder.style.width = `70px`;
+                } else {
+                    cursorBorder.style.height = `50px`;
+                    cursorBorder.style.width = `50px`;
+                }
+            } else {
+                // Handle the case where element is null
                 cursorBorder.style.height = `50px`;
                 cursorBorder.style.width = `50px`;
             }

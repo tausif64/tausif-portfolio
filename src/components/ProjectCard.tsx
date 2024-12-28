@@ -1,11 +1,10 @@
 import { FC } from 'react'
-import ReactIcon from "./icons/ReactIcon"
-import { projectDataType } from './inxed'
+import { projectDataType, TechnologyComponent } from './inxed'
 import { Link } from 'react-router-dom'
 
 interface ProjectCardProps {
     data: projectDataType,
-    key: string | null | undefined
+    key: string | number;
 }
 
 const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
@@ -32,7 +31,8 @@ const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
                 }
             </div>
             <div className="flex flex-wrap mt-2 gap-2 cursor-pointer">
-                {data.technology.map((item, index) => (<span key={index}>{item}</span>))}
+                // Ensure data.technology is an array of strings
+                {data.technology.map((item: TechnologyComponent, index: number) => (<span key={index}>{item}</span>))}
             </div>
         </div>
     )

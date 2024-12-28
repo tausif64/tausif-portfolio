@@ -1,5 +1,5 @@
 
-import About from '../components/About';
+import About from './../components/About';
 import Hero from './../components/Hero';
 import Project from './Project';
 const Home = () => {

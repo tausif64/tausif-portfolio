@@ -1,6 +1,6 @@
 import { projectDataType } from "../components/inxed";
 import NotFoundPage from "./NotFoundPage";
-import projectData from './../data/projectData';
+import projectData from '../data/projectData';
 import { useParams } from 'react-router-dom';
 
 const ProjectDetail = () => {

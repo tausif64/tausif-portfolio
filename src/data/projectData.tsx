@@ -1,13 +1,13 @@
 // Updated Project Data Array with Randomly Generated Unique IDs
 import ReactIcon from "../components/icons/ReactIcon";
 import MySQL from "../components/icons/MySQL";
-import NodeJS from "./../components/icons/NodeJS";
-import Express from "./../components/icons/Express";
-import Html from "./../components/icons/Html";
-import Css from "./../components/icons/Css";
-import JavaScript from "./../components/icons/JavaScript";
-import Bootstrap from "./../components/icons/Bootstrap";
-import JqueryIcon from "./../components/icons/JqueryIcon";
+import NodeJS from "../components/icons/NodeJS";
+import Express from "../components/icons/Express";
+import Html from "../components/icons/Html";
+import Css from "../components/icons/Css";
+import JavaScript from "../components/icons/JavaScript";
+import Bootstrap from "../components/icons/Bootstrap";
+import JqueryIcon from "../components/icons/JqueryIcon";
 const projectData = [
   {
     id: "a0f58f34999fc19ff82d8b73",
