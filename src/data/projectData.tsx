@@ -1,13 +1,13 @@
 // Updated Project Data Array with Randomly Generated Unique IDs
 import ReactIcon from "../components/icons/ReactIcon";
 import MySQL from "../components/icons/MySQL";
-import NodeJS from "../components/icons/NodeJS";
-import Express from "../components/icons/Express";
-import Html from "../components/icons/Html";
-import Css from "../components/icons/Css";
-import JavaScript from "../components/icons/JavaScript";
-import Bootstrap from "../components/icons/Bootstrap";
-import JqueryIcon from "../components/icons/JqueryIcon";
+import NodeJS from "./../components/icons/NodeJS";
+import Express from "./../components/icons/Express";
+import Html from "./../components/icons/Html";
+import Css from "./../components/icons/Css";
+import JavaScript from "./../components/icons/JavaScript";
+import Bootstrap from "./../components/icons/Bootstrap";
+import JqueryIcon from "./../components/icons/JqueryIcon";
 const projectData = [
   {
     id: "a0f58f34999fc19ff82d8b73",
@@ -18,7 +18,7 @@ const projectData = [
     ],
     technology: [<ReactIcon />, <Express />, <NodeJS />, <MySQL />],
     url: "https://www.missionpahal.org/",
-    images: ["/tausif-portfolio/mission_pahal_1.png", "/tausif-portfolio/mission_pahal_2.jpg"],
+    images: ["/mission_pahal_1.png", "/mission_pahal_2.jpg"],
   },
   {
     id: "a09cad2a609f600d299f94bb",
@@ -34,7 +34,7 @@ const projectData = [
       <JqueryIcon />,
     ],
     url: "https://shivaenvirolab.com/",
-    images: ["/tausif-portfolio/shivaenvirolab_1.png", "/tausif-portfolio/shivaenvirolab_2.jpg"],
+    images: ["/shivaenvirolab_1.png", "/shivaenvirolab_2.jpg"],
   },
   {
     id: "c0f5c1821e614532c0be3e5f",
@@ -50,7 +50,7 @@ const projectData = [
       <JqueryIcon />,
     ],
     url: "https://modelschoolkanke.com/",
-    images: ["/tausif-portfolio/modelschoolkanke_1.png", "/tausif-portfolio/modelschoolkanke_2.jpg"],
+    images: ["/modelschoolkanke_1.png", "/modelschoolkanke_2.jpg"],
   },
 ];
 
